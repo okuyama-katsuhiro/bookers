@@ -1,11 +1,14 @@
 <% if notice %>
-<p><%= notice %></p>
+  <p><%= notice %></p>
 <% end %>
 
-<h1 style="font-size: 12px; font-weight: normal;"><strong>Title:</strong> <%= @book.title %></h1>
+<h1 style="font-size: 12px; font-weight: normal;">
+  <strong>Title:</strong> <%= @book.title %>
+</h1>
 
-<p><strong>Body:</strong> <%= @book.body %></p>
+<p>
+  <strong>Body:</strong> <%= @book.body %>
+</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
-
